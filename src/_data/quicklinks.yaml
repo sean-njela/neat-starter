@@ -1,14 +1,25 @@
 ---
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: 🚀 View My Projects
+    url: "https://devopssean.netlify.app/projects"
+    desc: My portfolio of web, DevOps, and data projects so you don’t have to wonder what I actually do.
+
+  - title: ✍️ Read My Blog
+    url: "https://devopssean.netlify.app/blog"
+    desc: Articles on lessons learned from real-world builds, so future me (and you) won’t suffer.
+
+  - title: 📂 Visit my GitHub
+    url: "https://github.com/sean-njela"
+    desc: Browse all my open source contributions and half-finished billion dollar ideas.
+
+  - title: 💼 My LinkedIn
+    url: "https://linkedin.com/in/sean-njela"
+    desc: The polished version of me, complete with endorsements and fewer typos.
+
+  - title: 📧 Get In Touch
+    url: "mailto:seannjela@outlook.com"
+    desc: 
+
+  - title: 🐦 My X (Twitter)
+    url: "https://x.com/devopssean"
+    desc: 

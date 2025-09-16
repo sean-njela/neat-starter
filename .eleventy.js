@@ -35,21 +35,31 @@ module.exports = function (eleventyConfig) {
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
 
+  // ✅ Copy everything inside src/static directly to site root
+  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
+  // ✅ Add a Projects collection
+  eleventyConfig.addCollection("project", (collectionApi) => {
+    return collectionApi.getFilteredByTag("project");
+  });
+
+  eleventyConfig.addFilter("uniqueCategories", function (collection) {
+    let cats = collection.map(item => item.data.category);
+    return [...new Set(cats)];
+  });
+
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+    if (outputPath && outputPath.endsWith && outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
       });
-      return minified;
     }
-
     return content;
   });
 

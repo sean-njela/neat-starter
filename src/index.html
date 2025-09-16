@@ -1,22 +1,35 @@
 ---
 layout: default
-title: Neat Starter
+title: Sean Njela
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
+<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center text-center px-4 pt-20 lg:pt-32">
+
+  <img src="/static/img/avatar.jpg" alt="Sean Njela" 
+       class="w-29 h-29 rounded-full mb-3 shadow-lg border-3 border-white" />
+
+  <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+    Hi, I'm
     <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
+      {{ title }}
     </strong>
+    — DevOps Engineer
   </h1>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
+  <h2 class="text-2xl sm:text-3xl font-semibold text-200 mb-6">
+    I Build Reliable Systems That 
+    <span class="relative inline-block">
+      <span class="relative z-10">NEVER SLEEP</span>
+      <span class="absolute inset-0 bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-400 rounded-md transform -skew-x-6"></span>
+    </span>
+  </h2>
+
+  <p class="max-w-2xl text-lg text-300 mb-12">
+    I specialize in <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>CI/CD pipelines</strong>, and <strong>AWS</strong>.  
+    I design secure, automated, and scalable infrastructure that is resilient under pressure and engineered to keep production humming (yes, even at <span class="whitespace-nowrap">3 AM</span>).
   </p>
 
   {% include "./_includes/partials/content.html" %}
 </div>
+

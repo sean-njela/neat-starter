@@ -1,0 +1,375 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "ffmpeg@7.1.1": {
+      "last_modified": "2025-08-12T09:17:37Z",
+      "resolved": "github:NixOS/nixpkgs/372d9eeeafa5b15913201e2b92e8e539ac7c64d1#ffmpeg",
+      "source": "devbox-search",
+      "version": "7.1.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "bin",
+              "path": "/nix/store/gkgrqbp39zvrbmkk1alq98sxxs0ra09i-ffmpeg-7.1.1-bin",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/8dvz9qflvfzaq5gppmh8fzhs9qn8spjm-ffmpeg-7.1.1-man",
+              "default": true
+            },
+            {
+              "name": "data",
+              "path": "/nix/store/b8pdx5iq32fpg84pl8fplhgljlfg0mrz-ffmpeg-7.1.1-data"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/1abzm62nfgzmpw6s6npz1rin6ppfcqzg-ffmpeg-7.1.1-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/q59425ijrbidn14py0vwx65h4zkq3snx-ffmpeg-7.1.1-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/7zcgjn45sfnm41n2slc5wwv0r50jz4yc-ffmpeg-7.1.1-lib"
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/gc39pwvnpqsrn71bz63kakg7ylrfzmc7-ffmpeg-7.1.1"
+            }
+          ],
+          "store_path": "/nix/store/gkgrqbp39zvrbmkk1alq98sxxs0ra09i-ffmpeg-7.1.1-bin"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "bin",
+              "path": "/nix/store/611i8s479ln8rf3j2fbbbq1l9hdk4i67-ffmpeg-7.1.1-bin",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/wrjizy5ilzsnfkvcjqpprdrc9bi128y9-ffmpeg-7.1.1-man",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/9avsfi3anri888m7mfpi3vs2agqbp93x-ffmpeg-7.1.1-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/0rjaz9j0qd76jv0d1b4miv85kyn6vi6h-ffmpeg-7.1.1-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/la9cjmn1y069ldhpzvdkg719hadb3rri-ffmpeg-7.1.1-lib"
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/nrsbrmbnyz1cz4yq8irwl76n3qm90cnh-ffmpeg-7.1.1"
+            },
+            {
+              "name": "data",
+              "path": "/nix/store/1cfffndq9rf121jmw3nbl3mwkhihhp4v-ffmpeg-7.1.1-data"
+            }
+          ],
+          "store_path": "/nix/store/611i8s479ln8rf3j2fbbbq1l9hdk4i67-ffmpeg-7.1.1-bin"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "bin",
+              "path": "/nix/store/7m9y5qgxrpf6hl8q2gl4c1fmgabyngi1-ffmpeg-7.1.1-bin",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/vdbyl17npnpjnwg5709fmnzsz1yb8y4l-ffmpeg-7.1.1-man",
+              "default": true
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/29750146f2chlkanzpffvs21kcgfxlkx-ffmpeg-7.1.1"
+            },
+            {
+              "name": "data",
+              "path": "/nix/store/lvqs2k281yv6c9d629jxd4k6cyax64g2-ffmpeg-7.1.1-data"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/c1qnpg1sr7ka9ifb3asdgwry2x1bjy47-ffmpeg-7.1.1-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/cdjqmy6i8lnsw9km19jk2aqjz9djqj1f-ffmpeg-7.1.1-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/y94dz1xxvvwhmry0gy65abnh1kx6ipi4-ffmpeg-7.1.1-lib"
+            }
+          ],
+          "store_path": "/nix/store/7m9y5qgxrpf6hl8q2gl4c1fmgabyngi1-ffmpeg-7.1.1-bin"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "bin",
+              "path": "/nix/store/apsks1qb01pjn8q4g3ypl1rbsgz6vvyc-ffmpeg-7.1.1-bin",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/y7vyzxw0pdaqdbn1ahz9bjp0hipnwnhv-ffmpeg-7.1.1-man",
+              "default": true
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/z5dk1v08a5w269l5i4702yrs5rqwp2g9-ffmpeg-7.1.1-lib"
+            },
+            {
+              "name": "out",
+              "path": "/nix/store/83fdi7gqayqyr898xlplnck7qapz98nm-ffmpeg-7.1.1"
+            },
+            {
+              "name": "data",
+              "path": "/nix/store/h9idg6pqrfa1hv33ns3slkak416jfx9h-ffmpeg-7.1.1-data"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/18zwbjlmwnmxanrlhiwjs0ppcdv9phfj-ffmpeg-7.1.1-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/sy8l9q3knk2x0h9ywa23v58aiv98j104-ffmpeg-7.1.1-doc"
+            }
+          ],
+          "store_path": "/nix/store/apsks1qb01pjn8q4g3ypl1rbsgz6vvyc-ffmpeg-7.1.1-bin"
+        }
+      }
+    },
+    "gitflow@1.12": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#gitflow",
+      "source": "devbox-search",
+      "version": "1.12.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gvnmfhfmqz4zd0a8n2bpnk8gmnz9fh8w-gitflow-1.12.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gvnmfhfmqz4zd0a8n2bpnk8gmnz9fh8w-gitflow-1.12.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4m1lir302vn69v40xh0fjkh83whdn7y7-gitflow-1.12.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4m1lir302vn69v40xh0fjkh83whdn7y7-gitflow-1.12.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i0m482i8fc4vi6as82g79l4f3jzirqiw-gitflow-1.12.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i0m482i8fc4vi6as82g79l4f3jzirqiw-gitflow-1.12.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nz5lmhgjinj8bflpsbalcinpfgznzaxp-gitflow-1.12.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nz5lmhgjinj8bflpsbalcinpfgznzaxp-gitflow-1.12.3"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-09-01T03:15:32Z",
+      "resolved": "github:NixOS/nixpkgs/58dcbf1ec551914c3756c267b8b9c8c86baa1b2f?lastModified=1756696532&narHash=sha256-6FWagzm0b7I%2FIGigOv9pr6LL7NQ86mextfE8g8Q6HBg%3D"
+    },
+    "go-task@3.44": {
+      "last_modified": "2025-08-03T19:18:05Z",
+      "resolved": "github:NixOS/nixpkgs/bf9fa86a9b1005d932f842edf2c38eeecc98eef3#go-task",
+      "source": "devbox-search",
+      "version": "3.44.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2s2xbxzkshricg27p5m6qg8xay6j1qcm-go-task-3.44.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2s2xbxzkshricg27p5m6qg8xay6j1qcm-go-task-3.44.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gf4cj1rnppcdbn1pksaw1a4zs6mm97h1-go-task-3.44.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gf4cj1rnppcdbn1pksaw1a4zs6mm97h1-go-task-3.44.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nq56q1rfknrl3b7acshqbiyrg6xnq39r-go-task-3.44.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nq56q1rfknrl3b7acshqbiyrg6xnq39r-go-task-3.44.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zjfzqsapmydx7y49clmj29l75ki4gi11-go-task-3.44.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zjfzqsapmydx7y49clmj29l75ki4gi11-go-task-3.44.1"
+        }
+      }
+    },
+    "poetry@2.1": {
+      "last_modified": "2025-08-11T23:54:17Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/5a983011e0f4b3b286aaa73e011ce32b1449a528#poetry",
+      "source": "devbox-search",
+      "version": "2.1.4",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/40wdkwvhgyak26dvm7nvk79sazsp70p0-python3.13-poetry-2.1.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/pqnpbi6kfcgpliwlw3d07n73iwd4zq10-python3.13-poetry-2.1.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/40wdkwvhgyak26dvm7nvk79sazsp70p0-python3.13-poetry-2.1.4"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1wcnin7zb7p3kgb0a5rdr123k1zm5m79-python3.13-poetry-2.1.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/x1y9vaw30ibdsp0c3q4k6kb9lsy125ah-python3.13-poetry-2.1.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/1wcnin7zb7p3kgb0a5rdr123k1zm5m79-python3.13-poetry-2.1.4"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ag8lzpbpacp6jfy7z7wjnkwbfic1ikms-python3.13-poetry-2.1.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/4hjin62zaapxgysj7z72729s6ww7wk00-python3.13-poetry-2.1.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/ag8lzpbpacp6jfy7z7wjnkwbfic1ikms-python3.13-poetry-2.1.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0in2k6jizc97cw3w4yivn2v3nipplfrb-python3.13-poetry-2.1.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/k5hi65p5y654wi6llza3azcz1xx0l7i5-python3.13-poetry-2.1.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/0in2k6jizc97cw3w4yivn2v3nipplfrb-python3.13-poetry-2.1.4"
+        }
+      }
+    },
+    "python@3.12": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#python312",
+      "source": "devbox-search",
+      "version": "3.12.11",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dm4fl983hky9lxj9bw3l7i0jnb4j408m-python3-3.12.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dm4fl983hky9lxj9bw3l7i0jnb4j408m-python3-3.12.11"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4k1n9qx7di8k7p2fq14phwhw9bzdfzki-python3-3.12.11",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/7kf4is0acnfbh8rii15zdf6xc7dlzzwc-python3-3.12.11-debug"
+            }
+          ],
+          "store_path": "/nix/store/4k1n9qx7di8k7p2fq14phwhw9bzdfzki-python3-3.12.11"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pfdb4894kx655ivy97y4qibncwd3spqx-python3-3.12.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pfdb4894kx655ivy97y4qibncwd3spqx-python3-3.12.11"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2i76abyx06asxr2k3rgsp8zx647qj38h-python3-3.12.11",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/gndignbyvrbrrgk575rcll7d8izkrcq5-python3-3.12.11-debug"
+            }
+          ],
+          "store_path": "/nix/store/2i76abyx06asxr2k3rgsp8zx647qj38h-python3-3.12.11"
+        }
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   # name: github
-  # repo: surjithctly/neat-starter
-media_folder: "src/static/img"
-public_folder: "/static/img"
+  # repo: sean-njela/neat-starter
+media_folder: "src/static/img/uploads"
+public_folder: "img/uploads"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -30,6 +30,25 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+
+
+  # ✅ New Projects collection
+  - label: "Projects"
+    name: "projects"
+    folder: "src/projects"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["Web", "Mobile", "Data", "Design", "Other"], default: "Web" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "URL", name: "url", widget: "string", hint: "Link to live project or repo" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+
+
   - label: "Settings"
     name: "settings"
     editor:

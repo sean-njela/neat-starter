@@ -27,6 +27,9 @@
   </a>
   <a href="https://github.com/sean-njela/docs/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/sean-njela/docs.svg" alt="license" />
+    </a>
+  <a href="https://app.netlify.com/projects/devopssean/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/714c8267-c07e-4b52-bc01-6c04a5c6ca68/deploy-status" alt="Netlify Status" />
   </a>
   </p>
 

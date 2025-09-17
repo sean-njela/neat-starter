@@ -19,7 +19,9 @@
   <body>
     {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+    <main class="pt-18 pb-15">
+      {{ content | safe }}
+    </main>
 
     {% include "./partials/footer.html" %}
 

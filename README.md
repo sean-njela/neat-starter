@@ -55,7 +55,8 @@
   <img src="assets/screenshot1.png" alt="screenshot1" />
 </div> -->
 
-![▶ Watch a short demo](assets/demo-video-gif.gif)
+<!-- ![▶ Watch a short demo](assets/demo-video-gif.gif) -->
+[![▶ Watch a short demo](assets/demo-video-gif.gif)](https://devopssean.netlify.app/)
 
 ---
 

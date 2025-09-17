@@ -10,7 +10,7 @@ description: The Universal K8s Template provides a complete Kubernetes
   and observability tooling. This project delivers a scalable, cloud-native
   template for rapid application delivery across environments.
 category: Devops
-image: https://logo.svgcdn.com/d/kubernetes-plain.png
+image: https://logo.svgcdn.com/d/kubernetes-plain-wordmark.svg
 url: https://github.com/sean-njela/k8s_app_template.git
 site: https://github.com/sean-njela/k8s_app_template.git
 ---

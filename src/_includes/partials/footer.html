@@ -1,17 +1,16 @@
-<footer class="fixed bottom-0 left-0 w-full z-50 backdrop-blur bg-white/80 border-t border-gray-200">
-    <div class="text-center py-2">
-      <small class="text-gray-500 text-sm">
-        © {{ settings.name }} 2025 · Made with ❤ by
-        <a href="{{ settings.url }}" target="_blank" class="underline hover:text-indigo-600">
-          {{ settings.author }}
-        </a>
-        •
-        <a href="https://github.com/sean-njela/neat-starter"
-           class="underline hover:text-indigo-600"
-           target="_blank" rel="noopener">
-          View on Github
-        </a>
-      </small>
-    </div>
-  </footer>
-  
+<footer class="footer footer-center fixed bottom-0 left-0 w-full z-50 bg-base-100/80 backdrop-blur border-t border-base-200 p-2 text-base-content text-sm">
+  <aside>
+    <p>
+      © {{ settings.name }} 2025 · Made with ❤ by
+      <a href="{{ settings.url }}" target="_blank" class="link link-primary">
+        {{ settings.author }}
+      </a>
+      •
+      <a href="https://github.com/sean-njela/neat-starter"
+         target="_blank" rel="noopener"
+         class="link link-primary">
+        View on Github
+      </a>
+    </p>
+  </aside>
+</footer>

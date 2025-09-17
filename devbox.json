@@ -8,10 +8,9 @@
       "ffmpeg@7.1.1"
     ],
     "shell": {
-      "init_hook": 
+      "init_hook":
       [
-        "source ~/.aliases",
-        "source ./.venv/bin/activate"
+        "source ~/.aliases"
       ],
       "scripts": {
         "test": ["echo \"Error: no test specified\" && exit 1"]

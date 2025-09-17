@@ -3,19 +3,18 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-4xl mt-6  px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
-                by
-                <a>{{ author }}</a>
+<section class="container max-w-4xl mx-auto px-6 pb-16">
+  <!-- Post Header -->
+  <header class="text-center mb-10">
+    <h1 class="text-5xl font-bold mb-4">{{ title }}</h1>
+    <p class="text-base text-base-content/70">
+      <time>{{ date | readableDate }}</time> · by <span class="font-medium">{{ author }}</span>
+    </p>
+    <div class="divider w-32 mx-auto mt-4"></div>
+  </header>
 
-            </time>
-        </p>
-
-    </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
-
-</div>
+  <!-- Post Content -->
+  <article class="prose lg:prose-xl max-w-none">
+    {{ content | safe }}
+  </article>
+</section>

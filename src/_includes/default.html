@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+
     {% if description %}
-      <meta name="description" content="{{description}}"/>
+      <meta name="description" content="{{ description }}" />
     {% endif %}
+
     {% block head %}{% endblock %}
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+
+    <!-- Tailwind + DaisyUI -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+
     {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+      <link rel="stylesheet" href="/static/css/prism-tomorrow.css" />
     {% endif %}
   </head>
-  <body>
+  <body class="bg-base-100 text-base-content">
     {% include "./partials/navbar.html" %}
 
-    <main class="pt-18 pb-15">
-      {{ content | safe }}
-    </main>
+    <!-- Fixed breadcrumbs -->
+    {% if path != "home" %}
+      <div class="fixed top-16 left-0 w-full z-40 backdrop-blur">
+        <div class="container mx-auto px-6 py-2">
+          <div class="breadcrumbs text-sm">
+            <ul>
+              <li><a href="/">Home</a></li>
+
+              {% if path == "blog" %}
+                <li><a href="/blog/">Blog</a></li>
+              {% endif %}
+
+              {% if path == "projects" %}
+                <li><a href="/projects/">Projects</a></li>
+              {% endif %}
+
+              {% if title and path != "blog" and path != "projects" %}
+                <li><a href="/blog/">Blog</a></li>
+                <li><span class="font-medium">{{ title }}</span></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+
+    <!-- Keep original spacing from before -->
+    {% if path == "home" %}
+      <main class="pt-18 pb-15">
+        {{ content | safe }}
+      </main>
+    {% else %}
+      <main class="pt-36 pb-15">
+        {{ content | safe }}
+      </main>
+    {% endif%}
 
     {% include "./partials/footer.html" %}
 
@@ -29,9 +66,7 @@
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
-
   </body>
 </html>

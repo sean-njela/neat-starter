@@ -112,7 +112,7 @@
 ## 🚀 Quick Start
 
 ```bash
-npm install
+pnpm install
 
 task dev # this one command will run all commands necessary to setup the environment. yes, really.
 ```

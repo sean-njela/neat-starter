@@ -7,13 +7,13 @@ eleventyExcludeFromCollections: true
 ---
 
 <!-- Filter buttons -->
-<div id="filters" class="flex flex-wrap gap-2 mb-12">
-  <button data-filter="all" aria-pressed="true" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">All</button>
-  <button data-filter="frontend" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">Frontend</button>
-  <button data-filter="backend" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">Backend</button>
-  <button data-filter="mobile" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">Mobile</button>
-  <button data-filter="fullstack" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">Fullstack</button>
-  <button data-filter="devops" class="px-4 py-2 rounded border border-gray-300 text-sm hover:bg-indigo-100">DevOps</button>
+<div id="filters" class="flex flex-wrap gap-2 mb-12 justify-center">
+  <button data-filter="all" aria-pressed="true" class="btn btn-outline btn-sm">All</button>
+  <button data-filter="frontend" class="btn btn-outline btn-sm">Frontend</button>
+  <button data-filter="backend" class="btn btn-outline btn-sm">Backend</button>
+  <button data-filter="mobile" class="btn btn-outline btn-sm">Mobile</button>
+  <button data-filter="fullstack" class="btn btn-outline btn-sm">Fullstack</button>
+  <button data-filter="devops" class="btn btn-outline btn-sm">DevOps</button>
 </div>
 
 <!-- Project cards grid -->
@@ -28,13 +28,12 @@ eleventyExcludeFromCollections: true
 <div id="empty-state" class="hidden text-center text-gray-600 pt-24 pb-24">
   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-       class="mx-auto mb-4 text-indigo-500">
+       class="mx-auto mb-4 text-primary">
     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
     <path d="M12 9v4"></path>
     <path d="M12 17h.01"></path>
   </svg>
   <h2 class="text-2xl font-semibold">No projects found 😢</h2>
 </div>
-
 
 <script src="/js/filters.js" defer></script>

@@ -1,17 +1,15 @@
 module.exports = {
   content: [
-    "./src/**/*.{html,njk,md}",   // all templates in src
-    "./src/_includes/**/*.{html,njk}", // partials
-    "./src/projects/**/*.{html,md,njk}" // project pages
+    "./src/**/*.{html,njk,md}",
+    "./src/_includes/**/*.{html,njk}",
+    "./src/projects/**/*.{html,md,njk}",
   ],
-  theme: {
-    container: {
-      center: true,
-    },
-    extend: {
-      colors: {},
-    },
+  theme: { extend: {} },
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
+  daisyui: {
+    themes: ["cupcake", "dark"],
+    darkTheme: "dark",
   },
-  variants: {},
-  plugins: [require("@tailwindcss/typography")],
 };

@@ -1,12 +1,14 @@
 <div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16 px-4 lg:mx-0">
-    {% if quicklinks.links %}
-      {% for item in quicklinks.links %}
-        <a href="{{item.url}}" target="_blank" class="p-4 border rounded-lg border-gray-200 hover:border-purple-400 transition">
-          <h3 class="font-medium">
+  {% if quicklinks.links %}
+    {% for item in quicklinks.links %}
+      <a href="{{ item.url }}" target="_blank" 
+         class="card bg-base-300 shadow-md transition hover:shadow-lg hover:shadow-blue-300">
+        <div class="card-body p-4">
+          <h3 class="card-title text-lg font-medium">
             {{ item.title }} →
           </h3>
-        </a>
-      {% endfor %}
-    {% endif %}
-  </div>
-  
+        </div>
+      </a>
+    {% endfor %}
+  {% endif %}
+</div>

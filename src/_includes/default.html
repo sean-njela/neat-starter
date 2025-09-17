@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -24,7 +24,7 @@
 
     <!-- Fixed breadcrumbs -->
     {% if path != "home" %}
-      <div class="fixed top-16 left-0 w-full z-40 backdrop-blur">
+      <div class="fixed top-16 left-0 w-full z-40 backdrop-blur bg-base-100/80">
         <div class="container mx-auto px-6 py-2">
           <div class="breadcrumbs text-sm">
             <ul>
@@ -38,8 +38,7 @@
                 <li><a href="/projects/">Projects</a></li>
               {% endif %}
 
-              {% if title and path != "blog" and path != "projects" %}
-                <li><a href="/blog/">Blog</a></li>
+              {% if title and path not in ["blog", "projects"] %}
                 <li><span class="font-medium">{{ title }}</span></li>
               {% endif %}
             </ul>
@@ -68,5 +67,6 @@
       <!-- Netlify Identity Widget -->
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
+
   </body>
 </html>

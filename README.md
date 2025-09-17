@@ -52,13 +52,15 @@
 ---
 
 ## 📸 Demo
+<a href="https://devopssean.netlify.app">
+<div align="center"> 
+  <img src="assets/screenshot1.png" alt="screenshot 1" />
+  <img href="https://devopssean.netlify.app" src="assets/screenshot2.png" alt="screenshot 2" />
+</div>
+</a>
 
-<!-- <div align="center"> 
-  <img src="assets/screenshot1.png" alt="screenshot1" />
-</div> -->
-
-<!-- ![▶ Watch a short demo](assets/demo-video-gif.gif) -->
-[![▶ Watch a short demo](assets/demo-video-gif.gif)](https://devopssean.netlify.app/)
+<!-- ![▶ Watch a short demo](assets/demo-video-gif.gif)
+[![▶ Watch a short demo](assets/demo-video-gif.gif)](https://devopssean.netlify.app/) -->
 
 ---
 

@@ -159,7 +159,7 @@ tasks:
       vars: [gif]
     vars:
       fps: "{{.fps | default 8}}"
-      colors: "{{.colors | default 64}}"
+      colors: "{{.colors | default 32}}"
     cmds:
       # Step 1: Generate optimized palette
       - >

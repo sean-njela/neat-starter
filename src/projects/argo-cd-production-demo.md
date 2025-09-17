@@ -9,7 +9,7 @@ description: This project demonstrates continuous deployment practices using
   Designed for DevOps teams and learners, this demo highlights best practices
   for scalable and automated Kubernetes deployments.
 category: Devops
-image: https://logo.svgcdn.com/d/argocd-original-wordmark.png
+image: https://logo.svgcdn.com/d/argocd-original-wordmark.svg
 url: https://github.com/sean-njela/argocd-demo
 site: https://sean-njela.github.io/argocd-demo/
 ---

@@ -7,9 +7,9 @@ items:
   # - text: Menu Three
   #   url: "#"
   - text: Home
-    url: /
+    url: "/"
   - text: Projects
-    url: /projects/
+    url: "/projects"
   - text: Blog
     url: "/blog"
   

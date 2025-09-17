@@ -1,6 +1,6 @@
 ---
 title: "Argo CD Production Demo "
-date: 2025-09-17T19:14:54.650Z
+date: 2025-09-17T19:16:22.088Z
 description: This project demonstrates continuous deployment practices using
   Argo CD to automate the deployment and management of Kubernetes applications.
   It integrates Docker, Helm, and Terraform to provision and maintain

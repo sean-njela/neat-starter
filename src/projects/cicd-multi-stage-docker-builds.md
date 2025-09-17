@@ -7,7 +7,7 @@ description: A full-featured CI/CD pipeline for a Java web application using
   while incorporating unit, integration, API, and BDD-style UI tests using
   JUnit, Pytest, and Behave.
 category: Devops
-image: https://logo.svgcdn.com/d/docker-original-wordmark.png
+image: https://logo.svgcdn.com/d/docker-original-wordmark.svg
 url: https://github.com/sean-njela/cicd_demo.git
 site: https://github.com/sean-njela/cicd_demo.git
 ---

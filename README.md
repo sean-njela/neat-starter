@@ -188,8 +188,8 @@ For comprehensive troubleshooting, refer to the [Troubleshooting](docs/3-trouble
 
 ## 🤝 Contributing
 
-<a href="https://github.com/your-username/your-repo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-username/your-repo" />
+<a href="https://github.com/sean-njela/neat-starter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sean-njela/neat-starter" />
 </a>
 
 > Contributions welcome! Open an issue or submit a PR.

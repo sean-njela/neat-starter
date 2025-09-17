@@ -1,6 +1,6 @@
 ---
 title: Zero Trust Architecture in Microservices
-date: 2025-09-17T22:32:42.052Z
+date: 2025-09-17T23:17:07.685Z
 description: This project implements a Zero Trust Architecture (ZTA) within a
   microservices ecosystem to enhance security and trust boundaries across
   distributed systems. Built with Kubernetes, Docker, Helm, and Terraform, it

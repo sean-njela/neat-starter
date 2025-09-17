@@ -3,10 +3,22 @@ layout: blog
 ---
 
 <section class="mt-15">
+    <!-- Filter buttons -->
+    <div id="filters" class="flex flex-wrap gap-2 mb-12">
+        <button data-filter="all" aria-pressed="true" class="btn btn-sm btn-outline">All</button>
+        {% for c in categories.items %}
+        <button data-filter="{{ c | lower }}" class="btn btn-sm btn-outline">
+            {{ c }}
+        </button>
+        {% endfor %}
+    </div>
+  
+
+
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
-        <article class="my-8">
+        <article class="my-8" data-category="{{ post.data.category | lower }}">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
@@ -16,6 +28,9 @@ layout: blog
                     {% endif %}
                 </a>
             </h2>
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">
+                {{ post.data.category or "Blog Post" }}
+            </p>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
                     {{ post.date | readableDate }}
@@ -39,3 +54,17 @@ layout: blog
         </article>
     {% endfor %}
 </section>
+
+<!-- Empty state message (hidden by default) -->
+<div id="empty-state" class="hidden text-center text-gray-600 pt-24 pb-24">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="mx-auto mb-4 text-primary">
+    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+    <path d="M12 9v4"></path>
+    <path d="M12 17h.01"></path>
+    </svg>
+    <h2 class="text-2xl font-semibold">No posts found 😢</h2>
+</div>
+
+<script src="/js/filters.js" defer></script>

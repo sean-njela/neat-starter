@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll("#filters button");
-  const cards = document.querySelectorAll("#project-grid .card");
+  const buttons = document.querySelectorAll("#filters [data-filter]");
+  const cards = document.querySelectorAll("[data-category]");
   const emptyState = document.getElementById("empty-state");
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const filter = button.getAttribute("data-filter");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
 
-      // Update active button styling
-      buttons.forEach(btn => btn.setAttribute("aria-pressed", "false"));
-      button.setAttribute("aria-pressed", "true");
+      // reset button states
+      buttons.forEach((b) => b.classList.remove("btn-active"));
+      btn.classList.add("btn-active");
 
       let visibleCount = 0;
 
       cards.forEach((card) => {
-        if (filter === "all" || card.dataset.category === filter) {
+        const category = card.getAttribute("data-category");
+        if (filter === "all" || category === filter) {
           card.classList.remove("hidden");
           visibleCount++;
         } else {
@@ -22,11 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Toggle empty state
-      if (visibleCount === 0) {
-        emptyState.classList.remove("hidden");
-      } else {
-        emptyState.classList.add("hidden");
+      // toggle empty state
+      if (emptyState) {
+        emptyState.classList.toggle("hidden", visibleCount > 0);
       }
     });
   });

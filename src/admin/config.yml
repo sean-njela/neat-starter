@@ -21,15 +21,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Author", name: "author", widget: "select", options: ["Sean Njela - DevOpsSean"], default: "Sean Njela - DevOpsSean" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
+      - { label: "Category", name: "category", widget: "select", options: ["Frontend", "Backend", "Mobile", "Fullstack", "Devops"], default: "Devops" }
 
 
   # ✅ New Projects collection
@@ -43,10 +38,10 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Category", name: "category", widget: "select", options: ["Web", "Mobile", "Data", "Design", "Other"], default: "Web" }
+      - { label: "Category", name: "category", widget: "select", options: ["Frontend", "Backend", "Mobile", "Fullstack", "Devops"], default: "Devops" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "URL", name: "url", widget: "string", hint: "Link to live project or repo" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+      - { label: "site", name: "site", widget: "string", hint: "Link to live site or docs" }
 
 
   - label: "Settings"
@@ -66,6 +61,8 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
+    
+    
       - label: "Quick Links"
         name: "links"
         file: "src/_data/quicklinks.yaml"
@@ -78,10 +75,12 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Description, name: desc, widget: string }
+    
+    
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.yaml"
         fields:
           - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
+          - { label: "Author", name: "author", widget: "select", options: ["Sean Njela - DevOpsSean"], default: "Sean Njela - DevOpsSean" }
           - { label: URL, name: url, widget: string }

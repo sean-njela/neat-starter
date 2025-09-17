@@ -7,13 +7,13 @@ eleventyExcludeFromCollections: true
 ---
 
 <!-- Filter buttons -->
-<div id="filters" class="flex flex-wrap gap-2 mb-12 justify-center">
-  <button data-filter="all" aria-pressed="true" class="btn btn-outline btn-sm">All</button>
-  <button data-filter="frontend" class="btn btn-outline btn-sm">Frontend</button>
-  <button data-filter="backend" class="btn btn-outline btn-sm">Backend</button>
-  <button data-filter="mobile" class="btn btn-outline btn-sm">Mobile</button>
-  <button data-filter="fullstack" class="btn btn-outline btn-sm">Fullstack</button>
-  <button data-filter="devops" class="btn btn-outline btn-sm">DevOps</button>
+<div id="filters" class="flex flex-wrap gap-2 mb-12">
+  <button data-filter="all" aria-pressed="true" class="btn btn-sm btn-outline">All</button>
+  {% for c in categories.items %}
+    <button data-filter="{{ c | lower }}" class="btn btn-sm btn-outline">
+      {{ c }}
+    </button>
+  {% endfor %}
 </div>
 
 <!-- Project cards grid -->

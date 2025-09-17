@@ -10,7 +10,7 @@ description: This project implements a Zero Trust Architecture (ZTA) within a
   tooling. It’s a practical demonstration of ZTA concepts applied in real-world
   microservices environments, ideal for high-assurance system design.
 category: Devops
-image: img/uploads/2b0f22f0c44756cd8a0c1f2f45fec6702b8eb0d3-1099x594.avif
+image: https://cdn.sanity.io/images/rq6fqixc/production/2b0f22f0c44756cd8a0c1f2f45fec6702b8eb0d3-1099x594.png
 url: https://github.com/sean-njela/zta_thesis_project.git
 site: https://sean-njela.github.io/zta_thesis_project/
 ---

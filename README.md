@@ -9,6 +9,8 @@
    This is the full code to my Developer Portfolio Built with <strong>N</strong>etlify CMS, <strong>E</strong>leventy, <strong>A</strong>lpine JS & <strong>T</strong>ailwind CSS
   </p>
 
+  <p>Visit the  <a href="https://devopssean.netlify.app/"> ▶ <strong> LIVE SITE </strong> ◀</a></p>
+
   <p>
     <a href="https://github.com/sean-njela/neat-starter/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/sean-njela/neat-starter" alt="contributors" />

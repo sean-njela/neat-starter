@@ -151,3 +151,28 @@ tasks:
       - "{{.video}}"
     generates:
       - "assets/demo-video-small.mp4"
+
+  compress-gif:
+    desc: Compress a GIF to assets/demo-video-gif.gif (pass gif=....gif)
+    deps: [mkdir-assets]
+    requires:
+      vars: [gif]
+    vars:
+      fps: "{{.fps | default 8}}"
+      colors: "{{.colors | default 64}}"
+    cmds:
+      # Step 1: Generate optimized palette
+      - >
+        ffmpeg -y -i "{{.gif}}"
+        -vf "fps={{.fps}},scale=iw:-1:flags=lanczos,palettegen=max_colors={{.colors}}"
+        assets/palette.png
+      # Step 2: Apply palette
+      - >
+        ffmpeg -y -i "{{.gif}}" -i assets/palette.png
+        -lavfi "fps={{.fps}},scale=iw:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5"
+        assets/demo-video-gif.gif
+      - rm -f assets/palette.png
+    sources:
+      - "{{.gif}}"
+    generates:
+      - "assets/demo-video-gif.gif"

@@ -55,7 +55,8 @@
 <a href="https://devopssean.netlify.app">
 <div align="center"> 
   <img src="assets/screenshot1.png" alt="screenshot 1" />
-  <img href="https://devopssean.netlify.app" src="assets/screenshot2.png" alt="screenshot 2" />
+  <img src="assets/screenshot3.png" alt="screenshot 3" />
+  <img src="assets/screenshot4.png" alt="screenshot 4" />
 </div>
 </a>
 
@@ -118,6 +119,8 @@ pnpm install
 
 task dev # this one command will run all commands necessary to setup the environment. yes, really.
 ```
+
+The command also starts the local CMS at [localhost:8080/admin]()
 
 ---
 ## 📚 Documentation

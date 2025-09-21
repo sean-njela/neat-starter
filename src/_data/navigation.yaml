@@ -1,15 +1,9 @@
----
 items:
-  # - text: Menu One
-  #   url: "#"
-  # - text: Menu Two
-  #   url: "#"
-  # - text: Menu Three
-  #   url: "#"
   - text: Home
-    url: "/"
+    url: /
   - text: Projects
-    url: "/projects"
+    url: /projects
   - text: Blog
-    url: "/blog"
-  
+    url: /blog
+  - text: (View on Git)
+    url: https://github.com/sean-njela/neat-starter

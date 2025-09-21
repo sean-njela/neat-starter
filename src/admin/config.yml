@@ -56,7 +56,7 @@ collections:
           - label: Nav Items
             name: items
             widget: list
-            allow_add: false
+            allow_add: true
             collapsed: false
             fields:
               - { label: Title, name: text, widget: string }
@@ -84,3 +84,16 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: "Author", name: "author", widget: "select", options: ["Sean Njela - DevOpsSean"], default: "Sean Njela - DevOpsSean" }
           - { label: URL, name: url, widget: string }
+
+
+      - label: "Homepage"
+        name: "homepage"
+        file: "src/_data/homepage.yaml"
+        create: true
+        slug: "{{slug}}"
+        fields:
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Job Title", name: "job_title", widget: "string" }
+          - { label: "What I Do", name: "what_i_do", widget: "string" }
+          - { label: "Highlight", name: "highlight", widget: "string" }
+          - { label: "Subtext", name: "subtext", widget: "markdown" }

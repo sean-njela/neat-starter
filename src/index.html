@@ -17,24 +17,23 @@ path: home
   <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
     Hi, I'm
     <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-      {{ title }}
+      {{ homepage.author }}
     </span>
-    — DevOps Engineer
+    — {{ homepage.job_title }}
   </h1>
 
   <!-- Tagline -->
   <h2 class="text-2xl sm:text-3xl font-semibold mb-6">
-    I Build Reliable Systems That
+    I {{ homepage.what_i_do }}
     <span class="relative inline-block">
-      <span class="relative z-10">NEVER SLEEP</span>
+      <span class="relative z-10">{{ homepage.highlight }}</span>
       <span class="absolute inset-0 bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-400 rounded-md transform -skew-x-6"></span>
     </span>
   </h2>
 
   <!-- Subtext -->
-  <p class="max-w-2xl text-lg mb-12 text-base-content/90">
-    I specialize in <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>CI/CD pipelines</strong>, and <strong>AWS</strong>.  
-    I design secure, automated, and scalable infrastructure that is resilient under pressure and engineered to keep production humming (yes, even at <span class="whitespace-nowrap">3 AM</span>).
+  <p class="prose ax-w-2xl text-lg mb-12 text-base-content/90">
+    {{ homepage.subtext | safe }}
   </p>
 
 

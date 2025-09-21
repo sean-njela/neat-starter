@@ -1,5 +1,5 @@
 <div class="lg:w-1/4 md:w-1/2 p-4" data-category="{{ project.category | lower }}">
-  <div class="card bg-base-300 shadow-md transition hover:shadow-lg hover:shadow-blue-300">
+  <div class="card bg-base-300 shadow-md transition hover:shadow-lg hover:shadow-blue-300 hover:whitespace-normal tooltip tooltip-top" data-tip="{{ project.description }}">
     
     {% if project.image %}
       <figure>
@@ -15,8 +15,6 @@
       <h2 class="card-title text-lg">
         {{ project.title }}
       </h2>
-
-      <p>{{ project.description | truncate(100, "...") }}</p>
 
       <div class="card-actions justify-between mt-2">
         {% if project.url %}

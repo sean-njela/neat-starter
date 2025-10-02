@@ -1,5 +1,5 @@
 ---
-title: "Cloud Infrastructure Automation with Terraform: Modular and Scalable"
+title: Cloud Infrastructure Automation with Terraform
 date: 2025-09-29T00:29:45.737Z
 description: Terraform to provision, configure, and manage AWS infrastructure as
   code. It follows a modular design that enables secure, repeatable, and

@@ -6,7 +6,7 @@ description: This project demonstrates how to design, deploy, and manage a
   Grafana, and Alertmanager integrated with CI/CD pipelines and cloud-native
   environments (Kubernetes).
 category: Devops
-image: https://logo.svgcdn.com/s/kubernetes-dark.svg
+image: https://logo.svgcdn.com/d/kubernetes-plain-wordmark.svg
 url: https://github.com/sean-njela/k8s_monitoring
 site: https://sean-njela.github.io/k8s_monitoring/
 ---
